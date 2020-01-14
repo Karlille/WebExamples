@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Example</title>
+    </head>
+<body>
+    <style>
+        h1{
+            padding: 0.8%;
+            text-align: center;
+            font-size: 2.7em;
+        }
+        #header{
+            background-color:#7fd2e3;
+        }
+        form{
+            margin-left:30%;
+            width:50%;
+            background-color: lightgrey;
+        }
+    *{
+        padding:0;
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    input[type=text], input[type=email], input[type=password]{
+        display:block;
+        width:80%;
+    }
+    label{
+        padding:0.8%;
+    }
+
+    
+    </style>
+<div id = "header">
+<h1>REGISTER</h1> 
+</div>
+<form action="" method="GET">
+<label for="fname">First Name</label>
+<input type="text" name="fname" required/>
+<label for="lname">Last Name</label>
+<input type="text" name="lname" required/>
+<label for="male">Male</label> 
+<input type="radio" name="male"/>
+<label for="female">Female</label> 
+<input type="radio" name="female"/>
+<label for="other">Other</label> 
+<input type="radio" name="other"/>
+<div id="select">
+    <label for="day">Day</label>
+    <select name="day">
+        <option value="">--Select A Date--</option>
+        <option value="1st">1</option>
+        <option value="2nd">2</option>
+        <option value="3rd">3</option>
+        <option value="4th">4</option>
+    </select>
+    <label for="Month">Month</label>
+    <select name="Month">
+        <option value="">--Select A Month--</option>
+        <option value="1st">March</option>
+        <option value="2nd">April</option>
+        <option value="3rd">May</option>
+        <option value="4th">June</option>
+    </select>
+    <label for="Year">Year</label>
+    <select name="Year">
+        <option value="">--Select A Year--</option>
+        <option value="1st">1995</option>
+        <option value="2nd">1994</option>
+        <option value="3rd">1993</option>
+        <option value="4th">1992</option>
+    </select>
+</div>
+<label for="email1">Email Address</label>
+<input type="email" name="email1" required/>
+<label for="pass">Password</label>
+
+<input type="password" name="pass" minlength="5" maxlength="12" required/>
+<input type="submit" value="SUBMIT" onclick="submit()"/>
+</form>
+<script>
+function submit() {
+alert("Item Has been submitted"); 
+}
+</script>
+</body>
+
+</html>
