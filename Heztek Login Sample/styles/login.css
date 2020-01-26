@@ -1,0 +1,38 @@
+*{
+  font-family: sans-serif;
+  padding: 0;
+  margin: auto;
+}
+.password{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+input[type=email] , input[type=password]{
+  width: 100%;
+  border: 0;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 2px solid black;
+  outline: 0;
+}
+input[type=email]:focus , input[type=password]:focus{
+  border-bottom: 2px solid #0000ff;
+  transition: 0.5s;
+  box-shadow: 0 4px 2px -2px rgba(81, 203, 238, 1);
+   border-bottom: 2px solid rgba(81, 203, 238, 1);
+}
+.fmain{
+  margin: auto;
+  padding-top: 15%;
+  width: 50%;
+}
+button{
+background: #95b8f0;
+cursor: pointer;
+font-weight: bold;
+font-size: 3em;
+width: 100%;
+border: 0;
+
+
+}

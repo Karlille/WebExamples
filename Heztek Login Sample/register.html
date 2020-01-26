@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page UX Example</title>
+    <link rel="stylesheet" href="styles/Register.css">
+    <script type="text/javascript" src="js/logic.js">
+    </script>
+  </head>
+  <body>
+    <form class="fmain" action="" method="">
+      <div class="fName">
+        <input tabindex="1" type="text" name="fname" placeholder="Enter your Full Name" required/>
+      </div>
+      <div class="address">
+        <input tabindex="1" type="number" name="pnumber" placeholder="Enter your phone number" required maxlength="10"/>
+      </div>
+      <div class="email">
+        <input tabindex="1" type="password" name="password" placeholder="Enter your Password" required/>
+      </div>
+      <div class="Conpassword">
+        <input tabindex="1" type="password" name="password" placeholder="Confirm your Password" required/>
+      </div>
+      <div class="Gender">
+        <select class="pickGender" name="Gender Select" required>
+          <option value="">-Select your Gender-</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+      <div class="cal">
+        <input tabindex="1" type="date" name="cal" value=""/>
+      </div>
+      <button id="reg" tabindex="2"type="submit" name="button" aria-label="login button">LOGIN</button>
+      <button id="cl"tabindex="2"type="submit" name="button" aria-label="login button" onclick="window.location.href='index.html'">CANCEL</button>
+    </form>
+
+
+  </body>
+</html>
